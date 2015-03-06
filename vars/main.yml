@@ -1,0 +1,16 @@
+---
+flowtools_capute_options: 
+     byte_order: ' -b '
+     debug_level: ' -d '
+     expire_count: '-e '
+     expire_size: '-E '
+     fiter_name: ' -f ' 
+     filter_definition: ' -F '
+     rotations: ' -n '
+     netsting_level: ' -N '
+     start_interval: ' -S '
+     tag_name: ' -t '
+     active_def: ' -T '
+     pdu_version: ' -V '
+     xlate_fname: ' -x '
+     z_level: ' -z '

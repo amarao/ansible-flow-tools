@@ -1,0 +1,3 @@
+---
+- name: Restart flow-capture
+  service: name=flow-capture state=restarted
