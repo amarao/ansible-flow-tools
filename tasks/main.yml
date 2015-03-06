@@ -1,6 +1,6 @@
 ---
-#- name: Ensure flow-tools is installed
-#  apt: name=flow-tools state=present
+- name: Ensure flow-tools is installed
+  apt: name=flow-tools state=present
 - name: Ensure every workdir for every router is exiting
   file: path={{item.workdir}} state=directory
   with_items: flowtools.captures
