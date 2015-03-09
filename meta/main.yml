@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: George Shuklin
+  description: Install and configure flow-capture from flow-tools package
+  license: BSD
+  min_ansible_version: 1.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  categories:
+    - networking
+    - system
+  dependencies: []
