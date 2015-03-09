@@ -3,7 +3,7 @@ galaxy_info:
   author: George Shuklin
   description: Install and configure flow-capture from flow-tools package
   license: BSD
-  min_ansible_version: 1.4
+  min_ansible_version: 1.6
   platforms:
     - name: Ubuntu
       versions:

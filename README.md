@@ -15,11 +15,13 @@ flowtools.captures contains list of captures to configure. Each capture should c
 workdir.
 
 Binding settings:
+
 * localip
 * remoteip
 * port
 
 Options:
+
 * byte_order
 * debug_level
 * expire_count
