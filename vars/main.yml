@@ -6,6 +6,7 @@ flowtools_capute_options:
      expire_size: '-E '
      fiter_name: ' -f ' 
      filter_definition: ' -F '
+     rotate_program: ' -R '
      rotations: ' -n '
      netsting_level: ' -N '
      start_interval: ' -S '
