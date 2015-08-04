@@ -25,10 +25,12 @@
 
 #(all possible options are listed in flow-tools/vars/main.yml in flowtools_capute_options)
 # there is three additional arguments:
+{% if flowtools.captures is defined -%}
 {% for entry in flowtools.captures -%}
     -w {{entry.workdir -}}
     {% for opt in entry.options|default([]) %}
         {{flowtools_capute_options[opt]}} {{-entry.options[opt]-}}
     {%- endfor -%}
     {{' '}}{{ entry.localip|default ('') }}/{{entry.remoteip|default('')}}/{{entry.port|default('')}}
-{% endfor -%}    
+{% endfor -%}
+{% endif %}
