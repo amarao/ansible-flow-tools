@@ -1,13 +1,13 @@
 ---
-- name: Ensure flow-tools is installed
+- name: Install flow-tools
   apt: name=flow-tools state=present
 
-- name: Ensure every workdir for every router is exiting
+- name: Create working dirs
   file: path={{item.workdir}} state=directory
   with_items: flowtools.captures
   when: flowtools.captures is defined
 
-- name: Configuring flow-capture
+- name: Configure flow-capture
   template: src=flow-capture.j2 dest=/etc/flow-tools/flow-capture.conf
   notify:
     - Restart flow-capture
