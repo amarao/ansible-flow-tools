@@ -4,7 +4,7 @@
 
 - name: Create working dirs
   file: path={{item.workdir}} state=directory
-  with_items: flowtools.captures
+  with_items: "{{flowtools.captures}}"
   when: flowtools.captures is defined
 
 - name: Configure flow-capture
